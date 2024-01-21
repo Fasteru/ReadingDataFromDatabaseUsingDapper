@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Models.PatientModel>;
+
+<h1>Data USING dAPPER</h1>
+
+
+@foreach(var item in Model)
+{
+    <tr>
+        <th>StudentId</th>
+        <th>StudentName</th>
+        <th>Class</th>
+        <th>Section</th>
+        <th>Gender</th>
+        <th>D.O.B</th>
+    </tr>
+    <tr>
+        <td>@item.Student_Id</td>
+        <td>@item.Student_Name</td>
+        <td>@item.Class</td>
+        <td>@item.Section</td>
+        <td>@item.Gender</td>
+        <td>@item.DateOfBirth</td>
+    </tr>
+}
